@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    
+        <div class="div-form">
+            <h1>Enter your personal informations</h1>
+            <form id="apply" action="/people_post" method="post">
+                <div class="container" >
+                    <ion-icon name="person"></ion-icon>
+                    <input id="name" type="name" value="" placeholder="Name" required>
+                </div>
+                <div class="container">
+                    <ion-icon name="mail"></ion-icon>
+                    <input id="email" type="email" value="" placeholder="Email" required>
+                </div>
+                <div class="container">
+                    <ion-icon name="call"></ion-icon>
+                    <input id="tel" type="tel" maxlength="10" value="" placeholder="Phone" required>
+                </div>
+                <div>
+                    <button class="applybtn" type="submit">Submit</button>
+                </div>
+            </form>
+            <a href="job.html"><button class="close-btn">Back to advertisements</button></a>
+        </div>    
+
+    <script src="apply.js" defer></script>
+
+
+
+</body>
+</html>

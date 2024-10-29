@@ -1,0 +1,418 @@
+@media (min-width: 1388px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #more,
+  #more1,
+  #more2 {
+    display: none;
+  }
+
+  header {
+    background-color: blue;
+    color: white;
+    height: 160px;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colonne {
+    display: flex;
+  }
+  .colonne1 {
+    background-color: aqua;
+  }
+
+  .barre,
+  .barre1 {
+    width: 15vw;
+    height: 2vw;
+  }
+
+  h1 {
+    padding: 0 0 4vh 0;
+  }
+
+  .job1,
+  .job2,
+  .job3 {
+    text-align: center;
+    padding: 6vh 25% 0 25%;
+  }
+
+  #myBtn,
+  #myBtn1,
+  #myBtn2 {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .show-popup {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .popup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s ease;
+  }
+
+  .popup-container .popup.box {
+    width: 500px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transform: scale(0);
+  }
+
+  .popup-container.active .popup.box {
+    transform: scale(1);
+    transition: 0.4 ease;
+    transition-delay: 0.25s;
+  }
+
+  .popup-box h1 {
+    color: #333;
+    line-height: 1;
+  }
+
+  .inputbox {
+    color: #333;
+    margin: 12px 0 20px;
+  }
+
+  .popup-box .close-btn {
+    width: 100%;
+    height: 45px;
+    background: blue;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  footer {
+    margin: 0%;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1388px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #more,
+  #more1,
+  #more2 {
+    display: none;
+  }
+
+  header {
+    background-color: blue;
+    color: white;
+    height: 150px;
+    font-size: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colonne {
+    display: flex;
+  }
+  .colonne1 {
+    background-color: aqua;
+  }
+
+  .barre,
+  .barre1 {
+    width: 15vw;
+    height: 2vw;
+  }
+
+  h1 {
+    padding: 0 0 4vh 0;
+  }
+
+  .job1,
+  .job2,
+  .job3 {
+    text-align: center;
+    padding: 6vh 25% 0 25%;
+  }
+
+  #myBtn,
+  #myBtn1,
+  #myBtn2 {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .show-popup {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .popup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s ease;
+  }
+
+  .popup-container .popup.box {
+    width: 500px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transform: scale(0);
+  }
+
+  .popup-container.active .popup.box {
+    transform: scale(1);
+    transition: 0.4 ease;
+    transition-delay: 0.25s;
+  }
+
+  .popup-box h1 {
+    color: #333;
+    line-height: 1;
+  }
+
+  .inputbox {
+    color: #333;
+    margin: 12px 0 20px;
+  }
+
+  .popup-box .close-btn {
+    width: 100%;
+    height: 45px;
+    background: blue;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  footer {
+    margin: 0%;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #more,
+  #more1,
+  #more2 {
+    display: none;
+  }
+
+  header {
+    background-color: blue;
+    color: white;
+    height: 120px;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colonne {
+    display: flex;
+  }
+  .colonne1 {
+    background-color: aqua;
+  }
+
+  .barre,
+  .barre1 {
+    width: 15vw;
+    height: 2vw;
+  }
+
+  h1 {
+    padding: 0 0 4vh 0;
+  }
+
+  .job1,
+  .job2,
+  .job3 {
+    text-align: center;
+    padding: 6vh 25% 0 25%;
+  }
+
+  #myBtn,
+  #myBtn1,
+  #myBtn2 {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .show-popup {
+    padding: 18px 40px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .popup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.4s ease;
+  }
+
+  .popup-container .popup.box {
+    width: 500px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transform: scale(0);
+  }
+
+  .popup-container.active .popup.box {
+    transform: scale(1);
+    transition: 0.4 ease;
+    transition-delay: 0.25s;
+  }
+
+  .popup-box h1 {
+    color: #333;
+    line-height: 1;
+  }
+
+  .inputbox {
+    color: #333;
+    margin: 12px 0 20px;
+  }
+
+  .popup-box .close-btn {
+    width: 100%;
+    height: 45px;
+    background: blue;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  footer {
+    margin: 0%;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+
